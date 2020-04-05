@@ -141,5 +141,5 @@ app.post("/placeOrder", (req,res)=>{
     })
 })
 
-
-app.listen(4200, console.log("Thank You"))
+var port = process.env.PORT || 4200
+app.listen(port, console.log("Thank You"))
